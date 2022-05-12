@@ -1,9 +1,14 @@
-var a = "hello";
-var b = 5; 
+var myString = 'I\'m a "fun ninja" string';
 
-//double negative
-if (!isNaN(a)) {
-    console.log("meaning of life is " + (a * b));
+if (myString.indexOf("ninja") === -1) {
+    console.log("the word ninja is not in the string");
 } else {
-    console.log("that aint even a number");
+    console.log("the word ninja starts at position " + myString.indexOf("ninja"));
 }
+
+var string1 = "Abc"; 
+var string2 = "Bcd"; 
+
+console.log(string1.toLowerCase() === string2.toLowerCase());
+
+console.log(string1 < string2);
